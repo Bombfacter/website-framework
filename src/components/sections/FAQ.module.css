@@ -1,0 +1,56 @@
+.section {
+  padding: var(--section-padding-y) var(--space-6);
+  background-color: var(--color-bg);
+}
+
+.inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  margin: 0 0 var(--space-12);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* data-open attribute drives open/closed state — ready for accordion upgrade */
+.item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.question {
+  width: 100%;
+  padding: var(--space-5) var(--space-6);
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.answer {
+  padding: 0 var(--space-6) var(--space-5);
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+}
